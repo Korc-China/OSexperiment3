@@ -12,6 +12,8 @@ fseek( FILE *stream, long offset, int origin );
   	SEEK_CUR： 当前位置  
   	SEEK_END： 文件结尾  
   	其中SEEK_SET,SEEK_CUR和SEEK_END和依次为0，1和2  
+## 最终实现一个类ext2文件系统
+通过利用一个txt文件作为文件硬盘，所有操作的执行都在该txt文件中进行。类ext2文件系统实现了create、delete、cd、close、read、write、password、format、exit、login、logout、ls共11种功能，完成了一个较为完善的类 ext2 的文件系统
 ## 其他注释均在代码中
 ***代码出错***  
 ![image](https://user-images.githubusercontent.com/98074671/206223938-0199cd9b-2e8f-448b-812f-4a4d22068d7c.png)  
